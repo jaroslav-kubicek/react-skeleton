@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "browserify": "^11.0.1",
+    "es6ify": "^1.6.0",
     "gulp": "^3.9.0",
     "gulp-livereload": "^3.8.0",
     "gulp-util": "^3.0.6",

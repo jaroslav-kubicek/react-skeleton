@@ -4,12 +4,13 @@ var source = require('vinyl-source-stream');
 var browserify = require('browserify');
 var watchify = require('watchify');
 var reactify = require('reactify');
+var es6ify = require('es6ify');
 var livereload = require('gulp-livereload');
 
 var getBundler = function () {
   var bundler = browserify({
     entries: ['./src/app.jsx'],
-    transform: [reactify],
+    transform: [reactify, es6ify],
     extensions: ['.jsx'],
     debug: true,
     cache: {},
